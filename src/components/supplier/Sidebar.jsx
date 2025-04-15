@@ -4,7 +4,7 @@ import {
   FaHome, FaStore, FaWarehouse, FaClipboardList, 
   FaBox, FaBell, FaUser, FaSignOutAlt, FaBars, FaTimes, FaBarcode 
 } from "react-icons/fa";
-import logo from "../assets/logo1.png"; // Ensure path is correct
+import logo from "../../assets/logo1.png"; // Ensure path is correct
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);

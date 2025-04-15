@@ -1,6 +1,6 @@
 import React from 'react'
-import Sidebar from "../components/Sidebar";
-import SupermarketsSupplied from "../components/SupermarketsSupplied";
+import Sidebar from "../../components/supplier/Sidebar";
+import SupermarketsSupplied from "../../components/supplier/SupermarketsSupplied";
 const MySupermarkets = () => {
   return (
     <div className="flex min-h-screen bg-[#f7f4f3]">

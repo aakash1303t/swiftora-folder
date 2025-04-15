@@ -1,6 +1,6 @@
 import React from 'react'
-import Sidebar from "../components/Sidebar";
-import MyOrders from "../components/MyOrders";
+import Sidebar from "../../components/supplier/Sidebar";
+import MyOrders from "../../components/supplier/MyOrders";
 const Orders = () => {
     const orders = [
         { id: "#ORD123", product: "Organic Apples", quantity: 120, date: "March 12, 2025", status: "Delivered" },

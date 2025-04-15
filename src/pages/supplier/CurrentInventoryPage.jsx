@@ -1,6 +1,6 @@
 import React from 'react';
-import Sidebar from "../components/Sidebar";
-import CurrentInventory from "../components/CurrentInventory";
+import Sidebar from "../../components/supplier/Sidebar";
+import CurrentInventory from "../../components/supplier/CurrentInventory";
 const CurrentInventoryPage = () => {
 
     const inventoryItems = [

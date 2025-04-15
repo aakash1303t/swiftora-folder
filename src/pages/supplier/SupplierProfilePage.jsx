@@ -1,7 +1,7 @@
 import React from 'react'
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../../components/supplier/Sidebar";
 import { LoadScript } from "@react-google-maps/api";
-import SupplierProfile from '../components/SupplierProfile'
+import SupplierProfile from '../../components/supplier/SupplierProfile'
 
 const API_KEY = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 const MAP_LIBRARIES = ["places"];

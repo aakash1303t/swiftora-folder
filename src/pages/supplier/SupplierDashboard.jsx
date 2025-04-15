@@ -1,8 +1,8 @@
 import React from "react";
-import Sidebar from "../components/Sidebar";
-import SupermarketsSupplied from "../components/SupermarketsSupplied";
-import CurrentInventory from "../components/CurrentInventory";
-import MyOrders from "../components/MyOrders";
+import Sidebar from "../../components/supplier/Sidebar";
+import SupermarketsSupplied from "../../components/supplier/SupermarketsSupplied";
+import CurrentInventory from "../../components/supplier/CurrentInventory";
+import MyOrders from "../../components/supplier/MyOrders";
 import { ShoppingCart, Box, Users } from "react-feather";
 
 const SupplierDashboard = () => {

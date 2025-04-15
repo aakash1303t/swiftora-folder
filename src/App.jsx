@@ -1,13 +1,13 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Registration from "./pages/Registration";
-import CurrentInventoryPage from "./pages/CurrentInventoryPage";
-import MySupermarkets from "./pages/MySupermarkets";
-import Orders from "./pages/Orders";
-import SupplierProfilePage from "./pages/SupplierProfilePage";
-import SupplierDashboard from "./pages/SupplierDashboard";
-import SupermarketDashboard from "./pages/SupermarketDashboard";
-import BarcodeScanner from "./pages/BarcodeScanner";
+import CurrentInventoryPage from "./pages/supplier/CurrentInventoryPage";
+import MySupermarkets from "./pages/supplier/MySupermarkets";
+import Orders from "./pages/supplier/Orders";
+import SupplierProfilePage from "./pages/supplier/SupplierProfilePage";
+import SupplierDashboard from "./pages/supplier/SupplierDashboard";
+import SupermarketDashboard from "./pages/supermarket/SupermarketDashboard";
+import BarcodeScanner from "./pages/supplier/BarcodeScanner";
 import Login from "./pages/Login";
 
 function App() {
