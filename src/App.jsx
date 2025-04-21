@@ -7,11 +7,11 @@ import MySupermarkets from "./pages/supplier/MySupermarkets";
 import MySuppliers from "./pages/supermarket/MySuppliers";
 import Orders from "./pages/supplier/Orders";
 import SalesOverviewPage from "./pages/supermarket/SalesOverviewPage";
+import TransactionHistory from "./pages/supermarket/TransactionHistoryPage";
 import SupplierProfilePage from "./pages/supplier/SupplierProfilePage";
 import SupermarketProfilePage from "./pages/supermarket/SupermarketProfilePage";
 import SupplierDashboard from "./pages/supplier/SupplierDashboard";
 import SupermarketDashboard from "./pages/supermarket/SupermarketDashboard";
-import BarcodeScanner from "./pages/supplier/BarcodeScanner";
 import Login from "./pages/Login";
 import TransactionHistoryPage from "./pages/supermarket/TransactionHistoryPage";
 

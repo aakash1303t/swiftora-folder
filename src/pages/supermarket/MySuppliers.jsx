@@ -1,5 +1,4 @@
 import React from 'react';
-import Sidebar from "../../components/supermarket/SupermarketSidebar"; 
 import SupplierList from '../../components/Supermarket/SupplierList';
 const MySuppliers = () => { 
   return (
