@@ -1,9 +1,10 @@
 import React from "react";
 
 const CurrentInventory = ({ inventoryItems }) => {
+  
   return (
     <section className="bg-white p-6 rounded-lg shadow-md mt-6">
-      <h2 className="text-xl font-semibold text-[#5b2333]">Current Inventory</h2>
+      <h2 className="text-xl font-semibold text-[#5b2333]">Inventory</h2>
       <p className="text-sm text-gray-700 mt-2">
         {inventoryItems.length} items in stock, 1 low stock alert
       </p>

@@ -38,7 +38,7 @@ const Sidebar = () => {
             { to: "/supplier-profile", icon: <FaUser className="text-xl" />, label: "Profile" },
             { to: "/my-supermarkets", icon: <FaStore className="text-xl" />, label: "My Supermarkets" },
             { to: "/my-orders", icon: <FaClipboardList className="text-xl" />, label: "My Orders" },
-            { to: "/inventory", icon: <FaBox className="text-xl" />, label: "Current Inventory" },
+            { to: "/inventory", icon: <FaBox className="text-xl" />, label: "Inventory" },
             { to: "https://scanner-rho-smoky.vercel.app/", icon: <FaBarcode className="text-xl" />, label: "Barcode Scanner" },
           ].map(({ to, icon, label }) => (
             <NavLink
