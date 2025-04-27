@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Sidebar from "../../components/supplier/Sidebar";
 import SupermarketsSupplied from "../../components/supplier/SupermarketsSupplied";
 import CurrentInventory from "../../components/supplier/CurrentInventory";
@@ -9,6 +10,7 @@ import axios from "axios";
 const SupplierDashboard = () => {
   const [inventoryItems, setInventoryItems] = useState([]);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   const orders = [
     { id: "#ORD123", product: "Organic Apples", quantity: 120, date: "March 12, 2025", status: "Delivered" },
@@ -29,7 +31,7 @@ const SupplierDashboard = () => {
         headers: { Authorization: `Bearer ${token}` },
       });
 
-      const products = response.data.products || []; // <-- match API response shape
+      const products = response.data.products || [];
 
       const mappedProducts = products.map((product) => {
         let status = "Out of Stock";
@@ -96,7 +98,20 @@ const SupplierDashboard = () => {
         {/* Dashboard Sections */}
         <div className="space-y-6 md:space-y-8">
           <SupermarketsSupplied />
-          {!loading && <CurrentInventory inventoryItems={inventoryItems} />}
+
+          {/* Inventory Section */}
+          <div className="flex justify-between items-center">
+            <h2 className="text-xl md:text-2xl font-semibold text-[#5b2333]">Inventory</h2>
+          </div>
+
+          {!loading && (
+            <CurrentInventory
+              inventoryItems={inventoryItems.slice(0, 4)} // Show only 4 items
+              fullCount={inventoryItems.length}           // Pass full length separately
+              allowActions={false}                        // No Edit/Delete
+            />
+          )}
+
           <MyOrders orders={orders} />
         </div>
       </div>

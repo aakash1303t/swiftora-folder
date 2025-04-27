@@ -23,7 +23,7 @@ const CurrentInventoryPage = () => {
         headers: { Authorization: `Bearer ${token}` },
       });
 
-      const products = response.data.products || []; // ← Make sure this matches API response
+      const products = response.data.products || []; // <-- matches API shape
 
       const mappedProducts = products.map((product) => {
         let status = "Out of Stock";
@@ -45,6 +45,7 @@ const CurrentInventoryPage = () => {
 
       setInventoryItems(mappedProducts);
       setLoading(false);
+      setError("");
 
     } catch (err) {
       console.error("Error fetching inventory:", err);
@@ -70,11 +71,21 @@ const CurrentInventoryPage = () => {
           </button>
         </div>
 
-        {/* Dashboard Sections */}
-        <div className="space-y-6 md:space-y-8">
-          <CurrentInventory inventoryItems={inventoryItems} />
-        </div>
+        {loading ? (
+          <p className="text-gray-600">Loading inventory...</p>
+        ) : error ? (
+          <p className="text-red-500">{error}</p>
+        ) : (
+          <div className="space-y-6 md:space-y-8">
+            <CurrentInventory
+              inventoryItems={inventoryItems}
+              refreshInventory={fetchInventory}
+              allowActions={true} // <-- Enable Edit/Delete
+            />
+          </div>
+        )}
 
+        {/* Add Product Modal */}
         {showModal && (
           <AddProductModal
             onClose={() => setShowModal(false)}
