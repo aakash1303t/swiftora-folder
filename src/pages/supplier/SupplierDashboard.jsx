@@ -100,9 +100,6 @@ const SupplierDashboard = () => {
           <SupermarketsSupplied />
 
           {/* Inventory Section */}
-          <div className="flex justify-between items-center">
-            <h2 className="text-xl md:text-2xl font-semibold text-[#5b2333]">Inventory</h2>
-          </div>
 
           {!loading && (
             <CurrentInventory
