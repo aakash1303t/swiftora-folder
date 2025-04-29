@@ -91,7 +91,7 @@ const SupplierDashboard = () => {
               <Box className="h-5 w-5 text-[#5b2333]" />
               <h2 className="text-md md:text-lg font-semibold text-[#5b2333]">Monthly Revenue</h2>
             </div>
-            <p className="text-2xl md:text-3xl font-bold text-black mt-2">£156,000</p>
+            <p className="text-2xl md:text-3xl font-bold text-black mt-2">₹156,000</p>
           </div>
         </div>
 
